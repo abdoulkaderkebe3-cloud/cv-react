@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+:root {
+  --cv-primary: #1f3b68;
+  --cv-muted: #475569;
+  --cv-sep: #e6eef8;
+  --cv-bg-soft: #fbfbff;
+}
+
+.cv-accent {
+  color: var(--cv-primary);
+}
+.bg-cv-accent {
+  background-color: var(--cv-primary);
+  color: #fff;
+}
+.text-muted {
+  color: var(--cv-muted);
+}
+.bg-soft {
+  background-color: var(--cv-bg-soft);
+}
+.bg-cv-sep {
+  background-color: var(--cv-sep);
+}
+.border-cv-sep {
+  border-color: var(--cv-sep);
+}
+
+.link-muted:hover {
+  color: #0f172a;
+}
+
+/* Print / single-page rules */
+@page {
+  size: A4;
+  margin: 10mm;
+}
+
+@media print {
+  html,
+  body {
+    background: white !important;
+    color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+  .shadow-sm {
+    box-shadow: none !important;
+  }
+  .bg-soft {
+    background: white !important;
+  }
+  .bg-cv-sep {
+    background: #eaeef6 !important;
+  }
+  .page {
+    padding: 6mm !important;
+  }
+  .page * {
+    page-break-inside: avoid;
+  }
+  body,
+  .page {
+    font-size: 12px;
+  }
+  .print-hide {
+    display: none !important;
+  }
+}
+
+/* Modern CV helpers */
+.cv-gradient {
+  background: linear-gradient(
+    90deg,
+    rgba(31, 59, 104, 0.06),
+    rgba(31, 59, 104, 0)
+  );
+}
+.card {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.7)
+  );
+  border: 1px solid var(--cv-sep);
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(31, 59, 104, 0.04);
+}
+.chip {
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid var(--cv-sep);
+  padding: 4px 8px;
+  border-radius: 9999px;
+  font-size: 12px;
+  color: var(--cv-muted);
+}
+.accent-stripe {
+  height: 6px;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #1f3b68, #3b6fa2);
+}
