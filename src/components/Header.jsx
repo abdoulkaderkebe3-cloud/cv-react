@@ -1,4 +1,5 @@
-import photo from "../assets/kebe.jpg";
+//import photo from "../assets/kebe.jpg";
+import image from "../assets/photo_2026-01-12_22-23-40.jpg"
 
 function ContactLine({ label, value, href }) {
   if (!value) return null;
@@ -59,7 +60,7 @@ export default function Header({ data }) {
       <div className="shrink-0 print-hide">
         <div className="h-[120px] w-[100px] border-2 border-cv-sep bg-soft relative overflow-hidden rounded-md">
           <img
-            src={photo}
+            src={image}
             alt="photo du kader"
             className="h-full w-full object-cover"
           />
