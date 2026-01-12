@@ -19,7 +19,7 @@ export const cvData = {
       v: "20 juin 2006 — Yopougon, Côte d’Ivoire",
     },
     { k: "Nationalité", v: "Ivoirienne" },
-    { k: "Situation matrimoniale", v: "homme au foyer" },
+    { k: "Situation matrimoniale", v: "celibataire" },
     { k: "Adresse", v: "Yopougon Toit Rouge" },
     { k: "Permis de conduire", v: "Oui" },
   ],
